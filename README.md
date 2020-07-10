@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+You build it with a constructor and inside of the constructor you specify what you want the state to be. It also has a render which surrounds your return.
+
 2. Describe the different phases of the component lifecycle.
+
+Render Phase, pre-commit phase and commit phase. Render phase may be restarted or paused or canceled by react. Pre-commit phase reads from the DOM. Commit Phase works with the DOM and handles updates or side effects.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+Constructor - defines state. Render - Renders our component on the page. Runs whenever our component mounts and whenever it updates. componentDidMount()- runs after our component mounts. componentDidUpdate() - runs whever our component updates
+
 4. Define stateful logic.
 
+Any code that uses state. this.state... Can be created with one or more hooks. State describes the current value of your component.
+
 5. Describe how to test a React component with React Testing Library.
+
+you create a new .js file named the same as your file you wish to test but add .test before the .js and after the name of the file. Then in that file you add your tests. You run these tests through the console.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
